@@ -32,8 +32,8 @@ if(!document.getElementById("search-result")){
         let link = links[i];
         if(link.href.indexOf("xn----7sbab5aqcbiddtdj1e1g.xn--p1ai") != -1){
             nextYandexPage = false;
-            //link.click();
-            location.href = link.href;
+            link.removeAttribute("target");
+            link.click();
             break;
         }
     }
