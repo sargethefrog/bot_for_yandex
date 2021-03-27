@@ -38,6 +38,6 @@ if(!document.getElementById("search-result")){
         }
     }
     if(nextYandexPage){
-        document.querySelector(".link.link_theme_none.link_target_serp.pager__item.pager__item_kind_next.i-bem link_js_inited").click();
+        document.querySelector(".pager__item_kind_next").click();
     }
 }
